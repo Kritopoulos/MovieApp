@@ -1,7 +1,7 @@
 *.iml
 .gradle
 /local.properties
-/keys
+/app/src/main/java/com/example/moviesapp/keys
 /.idea/caches
 /.idea/libraries
 /.idea/modules.xml
