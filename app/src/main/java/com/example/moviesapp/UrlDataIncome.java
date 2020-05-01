@@ -5,7 +5,7 @@ import android.os.AsyncTask;
 import android.util.Log;
 import android.widget.ListView;
 
-import com.example.moviesapp.keys.SecretVariables;
+import com.example.moviesapp.secrets.SecretVariables;
 
 import org.json.JSONArray;
 import org.json.JSONException;
