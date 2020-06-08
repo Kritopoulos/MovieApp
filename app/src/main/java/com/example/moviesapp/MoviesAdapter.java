@@ -23,6 +23,8 @@ import java.text.SimpleDateFormat;
 import java.util.ArrayList;
 import java.util.Date;
 
+//test to change branch
+
 public class MoviesAdapter extends ArrayAdapter<Movie> {
 
     private Context mContext;
