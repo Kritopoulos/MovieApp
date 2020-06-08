@@ -4,27 +4,18 @@ public class Movie {
 
     private String originalTitle;
     private String avatar;
-    private String sumary;
+    private String overView;
     private String title;
-    private String voreAvrg;
-    private String releaseData;
+    private String voteAverage;
+    private String releaseDate;
     private Boolean isFavourite = false;
 
-    public Movie(String originalTitle, String avatar, String sumary, String title, String voreAvrg, String releaseData) {
+    public Movie(String originalTitle, String avatar, String overview, String releaseDate, String vote_Average) {
         this.originalTitle = originalTitle;
         this.avatar = avatar;
-        this.sumary = sumary;
-        this.title = title;
-        this.voreAvrg = voreAvrg;
-        this.releaseData = releaseData;
-    }
-
-    public Boolean getFavourite() {
-        return isFavourite;
-    }
-
-    public void setFavourite(Boolean favourite) {
-        isFavourite = favourite;
+        this.overView = overview;
+        this.voteAverage = vote_Average;
+        this.releaseDate = releaseDate;
     }
 
     public String getOriginalTitle() {
@@ -43,12 +34,12 @@ public class Movie {
         this.avatar = avatar;
     }
 
-    public String getSumary() {
-        return sumary;
+    public String getOverView() {
+        return overView;
     }
 
-    public void setSumary(String sumary) {
-        this.sumary = sumary;
+    public void setOverView(String overView) {
+        this.overView = overView;
     }
 
     public String getTitle() {
@@ -59,19 +50,27 @@ public class Movie {
         this.title = title;
     }
 
-    public String getVoreAvrg() {
-        return voreAvrg;
+    public String getVoteAverage() {
+        return voteAverage;
     }
 
-    public void setVoreAvrg(String voreAvrg) {
-        this.voreAvrg = voreAvrg;
+    public void setVoteAverage(String voteAverage) {
+        this.voteAverage = voteAverage;
     }
 
-    public String getReleaseData() {
-        return releaseData;
+    public String getReleaseDate() {
+        return releaseDate;
     }
 
-    public void setReleaseData(String releaseData) {
-        this.releaseData = releaseData;
+    public void setReleaseDate(String releaseDate) {
+        this.releaseDate = releaseDate;
+    }
+
+    public Boolean getFavourite() {
+        return isFavourite;
+    }
+
+    public void setFavourite(Boolean favourite) {
+        isFavourite = favourite;
     }
 }

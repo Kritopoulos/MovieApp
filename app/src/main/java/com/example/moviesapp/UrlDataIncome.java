@@ -6,11 +6,9 @@ import android.util.Log;
 import android.widget.ListView;
 
 import com.example.moviesapp.secrets.SecretVariables;
-
 import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
-
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStream;
@@ -65,17 +63,18 @@ public class UrlDataIncome extends AsyncTask<Void,Void,Void> {
             jsonObject = new JSONObject(data.toString());
             json = jsonObject.getJSONArray("results");
 
-            for(int i = 0; i<1000; i++ ){
+            for(int i = 0; i<40; i++ ){
+
                 JSONObject obj = json.getJSONObject(i);
 
-                String title = obj.get("title").toString();
-                String release_date = obj.get("release_date").toString();
-                String poster_path=obj.get("poster_path").toString();
                 String original_title = obj.get("original_title").toString();
+                String Avatar=obj.get("poster_path").toString();
                 String overview = obj.get("overview").toString();
+                String release_date = obj.get("release_date").toString();
                 String vote_average = obj.get("vote_average").toString();
 
-                Movie aMovie = new Movie(original_title,poster_path,overview,title,vote_average,release_date);
+
+                Movie aMovie = new Movie(original_title,Avatar,overview,release_date,vote_average);
                 movieArray.add(aMovie);
             }
         } catch (JSONException e) {

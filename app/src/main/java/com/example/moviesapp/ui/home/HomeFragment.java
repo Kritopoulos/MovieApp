@@ -30,7 +30,7 @@ public class HomeFragment extends Fragment {
         homeViewModel = ViewModelProviders.of(this).get(HomeViewModel.class);
         View root = inflater.inflate(R.layout.fragment_home, container, false);
 
-        moviesListV = root.findViewById(R.id.moviesListView);
+        moviesListV = root.findViewById(R.id.moviesList_View);
 
         urlDataIncome = new UrlDataIncome(getActivity(),R.layout.fragment_home,moviesListV);
         urlDataIncome.execute();

@@ -1,5 +1,4 @@
-<androidx.constraintlayout.widget.ConstraintLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -8,8 +7,7 @@
     >
 
 
-
-        <!-- place two button's inside layout using weight property -->
+    <!-- place two button's inside layout using weight property -->
 
 
     <ImageView
@@ -17,16 +15,14 @@
         android:layout_width="30dp"
         android:layout_height="30dp"
 
-        android:layout_marginStart="60dp"
-        android:layout_marginTop="5dp"
-        android:layout_marginEnd="20dp"
+        android:layout_marginTop="12dp"
 
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="32dp"
         android:contentDescription="@string/nav_header_desc"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toStartOf="@+id/subscribeTXT"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/avatarImage"
-        />
+        app:layout_constraintTop_toBottomOf="@+id/avatarImage" />
 
     <ImageView
         android:id="@+id/avatarImage"
@@ -48,8 +44,8 @@
         android:layout_marginTop="2dp"
         android:layout_marginEnd="2dp"
         android:layout_marginBottom="4dp"
-        android:textSize="17dp"
         android:textColor="@android:color/background_dark"
+        android:textSize="17dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/avatarImage"
@@ -63,11 +59,24 @@
         android:layout_marginTop="2dp"
         android:layout_marginEnd="2dp"
         android:layout_marginBottom="8dp"
-        android:textSize="20dp"
         android:textColor="@android:color/background_dark"
+        android:textSize="20dp"
         app:layout_constraintBottom_toTopOf="@+id/subscribeTXT"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/avatarImage"
         app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/infoIMG"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="26dp"
+        app:layout_constraintEnd_toStartOf="@+id/favouriteIMG"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/avatarImage"
+        app:srcCompat="@android:drawable/ic_menu_info_details" />
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
