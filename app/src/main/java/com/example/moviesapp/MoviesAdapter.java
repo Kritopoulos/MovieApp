@@ -24,7 +24,7 @@ import java.util.ArrayList;
 import java.util.Date;
 
 //test to change branch
-
+//commit
 public class MoviesAdapter extends ArrayAdapter<Movie> {
 
     private Context mContext;
